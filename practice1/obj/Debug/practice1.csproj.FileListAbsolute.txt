@@ -1,0 +1,16 @@
+C:\Users\Thinkpad\source\repos\practice1\practice1\bin\Debug\practice1.exe.config
+C:\Users\Thinkpad\source\repos\practice1\practice1\bin\Debug\practice1.exe
+C:\Users\Thinkpad\source\repos\practice1\practice1\bin\Debug\practice1.pdb
+C:\Users\Thinkpad\source\repos\practice1\practice1\obj\Debug\practice1.csproj.AssemblyReference.cache
+C:\Users\Thinkpad\source\repos\practice1\practice1\obj\Debug\practice1.csproj.SuggestedBindingRedirects.cache
+C:\Users\Thinkpad\source\repos\practice1\practice1\obj\Debug\MainWindow.g.cs
+C:\Users\Thinkpad\source\repos\practice1\practice1\obj\Debug\App.g.cs
+C:\Users\Thinkpad\source\repos\practice1\practice1\obj\Debug\practice1_MarkupCompile.cache
+C:\Users\Thinkpad\source\repos\practice1\practice1\obj\Debug\practice1_MarkupCompile.lref
+C:\Users\Thinkpad\source\repos\practice1\practice1\obj\Debug\MainWindow.baml
+C:\Users\Thinkpad\source\repos\practice1\practice1\obj\Debug\practice1.g.resources
+C:\Users\Thinkpad\source\repos\practice1\practice1\obj\Debug\practice1.Properties.Resources.resources
+C:\Users\Thinkpad\source\repos\practice1\practice1\obj\Debug\practice1.csproj.GenerateResource.cache
+C:\Users\Thinkpad\source\repos\practice1\practice1\obj\Debug\practice1.csproj.CoreCompileInputs.cache
+C:\Users\Thinkpad\source\repos\practice1\practice1\obj\Debug\practice1.exe
+C:\Users\Thinkpad\source\repos\practice1\practice1\obj\Debug\practice1.pdb

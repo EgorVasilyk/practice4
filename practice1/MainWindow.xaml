@@ -1,0 +1,75 @@
+﻿<Window x:Class="practice1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:practice1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TabControl>
+            <TabItem Header="firm">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="25*"/>
+                        <ColumnDefinition Width="23*"/>
+                        <ColumnDefinition Width="747*"/>
+                    </Grid.ColumnDefinitions>
+                    <DataGrid x:Name ="grid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,10,0,254" Grid.ColumnSpan="3" SelectionChanged="grid_SelectionChanged"/>
+                    <ComboBox x:Name="select" HorizontalAlignment="Left" Margin="0,195,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="select_SelectionChanged" Grid.ColumnSpan="3"/>
+                    <Button x:Name="Badd" Content="Добавить" HorizontalAlignment="Left" Margin="154,217,0,0" VerticalAlignment="Top" Click="Badd_Click" Grid.Column="2"/>
+                    <TextBox x:Name="tbx" HorizontalAlignment="Left" Margin="74,195,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="217" Height="22" Grid.Column="2"/>
+                    <Button x:Name="del" Grid.Column="1" Content="удалить" HorizontalAlignment="Left" Margin="15,217,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Click="del_Click"/>
+                    <Button x:Name="Bupd" Content="Изменить" HorizontalAlignment="Left" Margin="154,237,0,0" VerticalAlignment="Top" Click="Bupd_Click" Grid.Column="2"/>
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="shop">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="13*"/>
+                    </Grid.ColumnDefinitions>
+                    <DataGrid x:Name ="grid1" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,0,236" Grid.ColumnSpan="2" SelectionChanged="grid1_SelectionChanged_1"/>
+                    <TextBox x:Name="tbx1" HorizontalAlignment="Left" Margin="60,223,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+                    <Button x:Name="Badd1" Content="Добавить" HorizontalAlignment="Left" Margin="92,241,0,0" VerticalAlignment="Top" Click="Badd1_Click" Grid.Column="1"/>
+                    <Button x:Name="del1" Content="удалить" HorizontalAlignment="Left" Margin="59,241,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Click="del1_Click"/>
+                    <Button x:Name="Bupd1" Content="Изменить" HorizontalAlignment="Left" Margin="92,261,0,0" VerticalAlignment="Top" Grid.Column="1" Click="Bupd1_Click"/>
+
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="phone">
+                <Grid Background="#FFE5E5E5">
+                    <DataGrid x:Name ="grid2" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,0,229" SelectionChanged="grid2_SelectionChanged"/>
+                    <TextBox x:Name="tbx21" HorizontalAlignment="Left" Margin="160,207,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                    <Button x:Name="Badd2" Content="Добавить" HorizontalAlignment="Left" Margin="192,225,0,0" VerticalAlignment="Top" Click="Badd2_Click"/>
+                    <TextBox x:Name="tbx22" HorizontalAlignment="Left" Margin="280,207,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                    <TextBox x:Name="tbx2" HorizontalAlignment="Left" Margin="40,207,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                    <ComboBox x:Name="cmb1" HorizontalAlignment="Left" Margin="397,203,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cmb1_SelectionChanged"/>
+                    <Button x:Name="del2" Content="удалить" HorizontalAlignment="Left" Margin="10,225,0,0" VerticalAlignment="Top" Click="del2_Click"/>
+                    <Button x:Name="Bupd2" Content="Изменить" HorizontalAlignment="Left" Margin="192,245,0,0" VerticalAlignment="Top" Click="Bupd2_Click"/>
+
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="phone_shop">
+                <Grid Background="#FFE5E5E5">
+                    <DataGrid x:Name ="grid3" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,0,230" SelectionChanged="grid3_SelectionChanged"/>
+                    <TextBox x:Name="tbx31" HorizontalAlignment="Left" Margin="154,208,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                    <Button x:Name="Badd3" Content="Добавить" HorizontalAlignment="Left" Margin="186,226,0,0" VerticalAlignment="Top" Click="Badd3_Click_1"/>
+                    <TextBox x:Name="tbx32" HorizontalAlignment="Left" Margin="274,208,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                    <TextBox x:Name="tbx3" HorizontalAlignment="Left" Margin="34,208,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                    <ComboBox x:Name="cmb2" HorizontalAlignment="Left" Margin="394,206,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cmb2_SelectionChanged"/>
+                    <ComboBox x:Name="cmb3" HorizontalAlignment="Left" Margin="634,206,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cmb3_SelectionChanged"/>
+                    <ComboBox x:Name="cmb4" HorizontalAlignment="Left" Margin="514,206,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cmb4_SelectionChanged"/>
+                    <Button x:Name="del3" Content="удалить" HorizontalAlignment="Left" Margin="10,226,0,0" VerticalAlignment="Top" Click="del3_Click"/>
+                    <Button x:Name="Bupd3" Content="Изменить" HorizontalAlignment="Left" Margin="186,246,0,0" VerticalAlignment="Top" Click="Bupd3_Click"/>
+
+
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>
